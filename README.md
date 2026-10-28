@@ -2,7 +2,7 @@
 
 > 底仓 + 每月定投，用 QQQ 二十余年真实行情跑一遍：同样的钱，坚持下来会变成多少。
 
-**在线使用**：<https://huigeshuo.github.io/toolbox-s/>
+**在线使用**：<https://huigeshuo.github.io/nasdaq100-backtest/>
 
 不用安装任何东西，手机、电脑打开即用。全部计算在浏览器本地完成，行情数据已内嵌在页面里，不联网、不请求任何接口。
 
