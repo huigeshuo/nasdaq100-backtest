@@ -17,7 +17,7 @@ st.set_page_config(
 )
 
 st.title("📈 纳斯达克 100 ETF 定投回测")
-st.caption("策略：底仓 + 每月固定金额定投 · 整数股交易 · 2001–2026 QQQ 历史数据（东方财富）")
+st.caption("策略：底仓 + 每月固定金额定投 · 整数股交易 · 2001–2026 QQQ 历史数据")
 
 # ---- 加载数据 ----
 with st.spinner("正在加载价格数据..."):
@@ -68,8 +68,7 @@ with col2:
 
 st.sidebar.divider()
 st.sidebar.caption(
-    f"数据范围：{data_min_year}年 至 {data_max_year}年{data_max_month}月\n\n"
-    "数据来源：东方财富（QQQ 前复权日线）"
+    f"数据范围：{data_min_year}年 至 {data_max_year}年{data_max_month}月  ·  QQQ 前复权日线"
 )
 
 if st.sidebar.button("🚀 开始回测", type="primary", use_container_width=True):
@@ -205,6 +204,6 @@ else:
         ### 策略说明
         - **底仓 + 月定投**：先一次性投入底仓资金，之后每月固定金额买入
         - **整数股交易**：当月资金不足 1 股时，现金累积到下月
-        - **数据来源**：东方财富 API（QQQ 前复权日线数据，2001–2026）
+        - **数据范围**：QQQ 前复权日线数据，2001–2026
         """
     )
